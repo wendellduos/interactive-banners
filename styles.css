@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,600;0,700;1,600;1,700&display=swap");
+
+:root {
+  --dark: #2c2c2c;
+  --dark-light: #4d4d4d;
+  --purple: #811ef3;
+  --blue: #345feb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fancy {
+  background: -webkit-linear-gradient(45deg, var(--purple), var(--blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#title-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% - 20px);
+  max-width: 1200px;
+  aspect-ratio: 3/1;
+  margin: 10px auto;
+  padding: 2rem;
+  background-image: url("./assets/img/baner-section.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#title-wrp h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+@media screen and (max-width: 840px) {
+  #title-wrp h1 {
+    font-size: 1.8rem;
+  }
+}
+
+#title-wrp a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--dark-light);
+}
